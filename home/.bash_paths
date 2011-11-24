@@ -4,13 +4,10 @@
 ####################################################################################################
 
 # Macports & GIT
-PATH=/opt/local/sbin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/usr/local/git/bin:/bin
+PATH=/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/usr/local/git/bin:/bin
 
 # ~/bin
 PATH=$PATH:$HOME/bin
-
-# mysql
-PATH=$PATH:/usr/local/mysql/bin
 
 # JAVA
 JAVA_HOME=/usr/local/soylatte
@@ -18,12 +15,21 @@ PATH=$PATH:/usr/local/soylatte/bin
 
 # MySQL
 DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
+PATH=$PATH:/usr/local/mysql/bin
 
 # Python 2.6
 PATH="${PATH}:/Library/Frameworks/Python.framework/Versions/2.6/bin"
 
+# Ruby
+RUBYOPT="rubygems"
+
+# Node
+NODE_PATH=/usr/local/lib/node_modules
+
+export DISPLAY=:0
 export PATH
 export DYLD_LIBRARY_PATH
 export JAVA_HOME
+export RUBYOPT
 
 ############################################
