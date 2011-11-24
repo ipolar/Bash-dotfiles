@@ -1,0 +1,29 @@
+####################################################################################################
+# PATHS
+# Modded from - https://github.com/sharfah/dotfiles
+####################################################################################################
+
+# Macports & GIT
+PATH=/opt/local/sbin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/usr/local/git/bin:/bin
+
+# ~/bin
+PATH=$PATH:$HOME/bin
+
+# mysql
+PATH=$PATH:/usr/local/mysql/bin
+
+# JAVA
+JAVA_HOME=/usr/local/soylatte
+PATH=$PATH:/usr/local/soylatte/bin
+
+# MySQL
+DYLD_LIBRARY_PATH=/usr/local/mysql/lib/
+
+# Python 2.6
+PATH="${PATH}:/Library/Frameworks/Python.framework/Versions/2.6/bin"
+
+export PATH
+export DYLD_LIBRARY_PATH
+export JAVA_HOME
+
+############################################
