@@ -4,7 +4,7 @@
 ####################################################################################################
 
 # Macports & GIT
-PATH=/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/usr/local/git/bin:/bin
+PATH=/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/usr/local/git/bin:/bin:/sbin
 
 # ~/bin
 PATH=$PATH:$HOME/bin
