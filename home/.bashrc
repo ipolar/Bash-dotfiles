@@ -1,6 +1,6 @@
 ####################################################################################################
 # BASHRC
-# Modded from - https://github.com/sharfah/dotfiles
+# Modded from - https://github.com/sharfah/dotfiles & https://github.com/fredrikmollerstrand/home/
 ####################################################################################################
 
 # RVM guff
@@ -27,10 +27,11 @@ export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;32m'
 
 # Source everything else
-. ~/.bash_prompt
-. ~/.bash_completion
-. ~/.bash_aliases
-. ~/.bash_functions
-. ~/.bash_paths
+source ~/.bash_prompt
+source ~/.bash_completion
+source ~/.bash_aliases
+source ~/.bash_functions
+source ~/.bash_paths
+source ~/.bash_hosts
 
 ############################################

@@ -1,6 +1,6 @@
 ####################################################################################################
 # PROMPT
-# Modded from - https://github.com/sharfah/dotfiles
+# Modded from - https://github.com/sharfah/dotfiles & https://github.com/fredrikmollerstrand/home/
 ####################################################################################################
 
 # Define some colours
@@ -48,8 +48,8 @@ function prompt_command {
 	fill=""
 	while [ "$fillsize" -gt "0" ]
 	do
-	fill="-${fill}" # fill with underscores to work on
-	let fillsize=${fillsize}-1
+		fill="-${fill}" # fill with underscores to work on
+		let fillsize=${fillsize}-1
 	done
 	
 	# If this is an xterm set the title to user@host:dir

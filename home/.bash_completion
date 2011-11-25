@@ -1,6 +1,6 @@
 ####################################################################################################
 # COMPLETION
-# Modded from - https://github.com/sharfah/dotfiles
+# Modded from - https://github.com/sharfah/dotfiles & https://github.com/fredrikmollerstrand/home/
 ####################################################################################################
 
 complete -A hostname   rsh rcp telnet rlogin r ftp ping disk

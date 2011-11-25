@@ -1,6 +1,6 @@
 ####################################################################################################
 # PATHS
-# Modded from - https://github.com/sharfah/dotfiles
+# Modded from - https://github.com/sharfah/dotfiles & https://github.com/fredrikmollerstrand/home/
 ####################################################################################################
 
 # Macports & GIT
@@ -31,5 +31,6 @@ export PATH
 export DYLD_LIBRARY_PATH
 export JAVA_HOME
 export RUBYOPT
+export NODE_PATH
 
 ############################################

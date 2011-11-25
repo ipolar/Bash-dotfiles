@@ -1,6 +1,6 @@
 ####################################################################################################
 # FUNCTIONS
-# Modded from - https://github.com/sharfah/dotfiles
+# Modded from - https://github.com/sharfah/dotfiles & https://github.com/fredrikmollerstrand/home/
 ####################################################################################################
 
 # Define some colours
@@ -16,7 +16,8 @@ NONE=$'\033[m'
 
 # Function to run upon exit of shell.
 function _exit() {
-    echo -e "${RED}Hasta la vista, baby${NONE}"
+	# Empty at the moment
+    echo -e ""
 }
 trap _exit EXIT
 
@@ -46,7 +47,6 @@ function ii() {
     echo -e "\n${RED}Additionnal information:$NONE " ; uname -a
     echo -e "\n${RED}Users logged on:$NONE " ; w -h
     echo -e "\n${RED}Machine stats :$NONE " ; uptime
-    echo
 }
 
 # For exporting users from MySQL
@@ -58,6 +58,12 @@ function mygrants() {
 		) AS query FROM mysql.user" | \
 	mysql $@ | \
 	sed 's/\(GRANT .*\)/\1;/;s/^\(Grants for .*\)/## \1 ##/;/##/{x;p;x;}'
+}
+
+# Reload profile
+function reload() {
+    echo "reloading .bash_profile"
+    source $HOME/.bash_profile
 }
 
 ####################################################################################################
