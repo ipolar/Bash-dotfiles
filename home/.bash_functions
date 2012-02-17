@@ -66,4 +66,10 @@ function reload() {
     source $HOME/.bash_profile
 }
 
+# List all hosts connected to
+function hosts() {
+    echo -e "\n${RED}Connected hosts:$NONE \n";
+	netstat -an | grep ESTABLISHED | awk '{print $5}' | awk -F: '{print $1}' | sort | uniq -c | awk '{ printf("%s\t%s\t",$2,$1) ; for (i = 0; i < $1; i++) {printf("*")}; print ""}'
+}
+
 ####################################################################################################
