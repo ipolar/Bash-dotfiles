@@ -26,8 +26,8 @@ export LESS_TERMCAP_so=$'\E[01;44;33m'
 export LESS_TERMCAP_ue=$'\E[0m'
 export LESS_TERMCAP_us=$'\E[01;32m'
 
-# Coloured GREP
-export GREP_OPTIONS='--color=auto -R -i -n'
+# Coloured GREP, ignore case, recursive
+export GREP_OPTIONS='--color=auto -R -i'
 export GREP_COLOR='0;93'
 
 # Source everything else
